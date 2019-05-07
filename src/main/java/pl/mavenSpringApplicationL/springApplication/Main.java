@@ -12,7 +12,6 @@ import pl.mavenSpringApplicationL.entity.Task;
 //@EnableJpaRepositories(basePackageClasses = TaskRepository.class)
 public class Main {
     public static void main(String[] args) {
-        //testBranch
         SpringApplication.run(Main.class, args);
     }
 }
