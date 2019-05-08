@@ -1,3 +1,4 @@
+pl\mavenSpringApplicationL\config\SecurityConfig.class
 pl\mavenSpringApplicationL\Main.class
 pl\mavenSpringApplicationL\controller\PageController.class
 pl\mavenSpringApplicationL\repositories\TaskRepository.class
