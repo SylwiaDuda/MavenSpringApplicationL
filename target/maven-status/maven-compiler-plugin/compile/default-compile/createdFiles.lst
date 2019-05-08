@@ -1,4 +1,4 @@
+pl\mavenSpringApplicationL\Main.class
 pl\mavenSpringApplicationL\controller\PageController.class
 pl\mavenSpringApplicationL\repositories\TaskRepository.class
-pl\mavenSpringApplicationL\springApplication\Main.class
 pl\mavenSpringApplicationL\entity\Task.class
