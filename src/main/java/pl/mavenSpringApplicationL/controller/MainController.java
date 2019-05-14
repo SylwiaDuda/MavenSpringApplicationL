@@ -8,6 +8,9 @@ import org.springframework.web.servlet.ModelAndView;
 public class MainController {
     @RequestMapping("/index")
     public ModelAndView index(){
-        return new ModelAndView("index");
+        ModelAndView modelAndView = new ModelAndView("index");
+        modelAndView.addObject("greetings","Hello world from variable!");
+        modelAndView.addObject("greetingsArray", new String[]{"Hello", "World", "!"});
+        return modelAndView;
     }
 }

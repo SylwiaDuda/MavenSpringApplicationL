@@ -1,1 +1,7 @@
 <h2>Hello World from Twig view!</h2>
+<h3>{{greetings}}</h3>
+<ul>
+    {% for i in greetingsArray %}
+        <li>{{loop.index+1}}.{{i}}</li>
+    {% endfor %}
+</ul>

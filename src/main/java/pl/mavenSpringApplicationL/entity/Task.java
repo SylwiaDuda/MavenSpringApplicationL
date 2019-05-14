@@ -2,9 +2,10 @@ package pl.mavenSpringApplicationL.entity;
 
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
-public class Task {
+public class Task implements Serializable {
 
     @GeneratedValue
     @Id

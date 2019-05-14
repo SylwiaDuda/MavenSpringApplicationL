@@ -4,8 +4,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 import pl.mavenSpringApplicationL.entity.Task;
 import pl.mavenSpringApplicationL.repositories.TaskRepository;
+
+import java.util.List;
 
 
 @Controller
@@ -42,5 +45,12 @@ public class PageController {
             response.append(t).append("<br>");
         }
         return response.toString();
+    }
+
+    @RequestMapping("/Task/tasklist")
+    public ModelAndView index(){
+        ModelAndView modelAndView = new ModelAndView("/Task/tasklist");
+        modelAndView.addObject("tasklist",taskRepository.findAll());
+        return modelAndView;
     }
 }
